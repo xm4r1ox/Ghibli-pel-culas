@@ -1,0 +1,63 @@
+@media (max-width: 600px) {
+    main { padding: 15px; }
+    header h1 { font-size: 26px; }
+    #peliculas { grid-template-columns: 1fr; }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f5ec;
+    color: #333;
+}
+
+header {
+    background-color: #b5dfb9;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+main {
+    padding: 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#buscador {
+    display: block;
+    margin: 0 auto 25px;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #b5dfb9;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.pelicula {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000020;
+}
+
+.pelicula h3 {
+    color: #38794a;
+}
+
+.pelicula p {
+    line-height: 1.5;
+}
